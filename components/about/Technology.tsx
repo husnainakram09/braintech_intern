@@ -28,7 +28,7 @@ const Technology: React.FC<Props> = ({}) => {
             flex={[`${100 / 3}%`, `${100 / 5}%`, `${100 / 7}%`]}
             key={key}
           >
-            <Image
+            <Image alt="img"
               src={`/images/${key + 1}.png`}
               w={"60%"}
               objectFit={"contain"}

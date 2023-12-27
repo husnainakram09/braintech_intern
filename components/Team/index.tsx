@@ -53,7 +53,7 @@ const Team: React.FC<Props> = ({}) => {
               bgRepeat={"no-repeat"}
               p={7}
             >
-              <Image src="/images/team_5.jpg" borderRadius={"100%"} />
+              <Image alt="img" src="/images/team_5.jpg" borderRadius={"100%"} />
             </Box>
             <Text fontSize={"2xl"} fontWeight={700} mt={2}>
               Pull Maradona

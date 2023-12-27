@@ -88,7 +88,7 @@ const Services: React.FC<Props> = ({}) => {
               gap={5}
               borderRadius={10}
             >
-              <Image src={data.image} width={"60px"} />
+              <Image alt="img" src={data.image} width={"60px"} />
               <Text fontSize={"2xl"} fontWeight={700}>
                 {data.title}
               </Text>

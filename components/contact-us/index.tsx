@@ -29,7 +29,7 @@ const ContactUs: React.FC<Props> = ({}) => {
             py={20}
           >
             <Box>
-              <Text color={"white"}>LET'S TALK</Text>
+              <Text color={"white"}>LET&apos;S TALK</Text>
               <Text fontSize={"4xl"} fontWeight={700} mt={5} color={"white"}>
                 Speak With Expert Engineers.
               </Text>

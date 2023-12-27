@@ -133,12 +133,24 @@ h1 {
   padding-bottom: 80px;
 }
 
+.sm {
+  display: none;
+}
+.lg {
+  display: block;
+}
 @media only screen and (max-width: 768px) {
   .review-slider-sm {
     display: flex !important;
   }
   .review-slider {
     display: none !important;
+  }
+  .sm {
+    display: block;
+  }
+  .lg {
+    display: none;
   }
 }
 

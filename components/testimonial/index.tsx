@@ -34,7 +34,7 @@ const Testimonial: React.FC<Props> = ({}) => {
         gap={10}
       >
         <GridItem>
-          <Image
+          <Image alt="img"
             src="/images/testimonial.png"
             minW={"100%"}
             objectFit={"contain"}

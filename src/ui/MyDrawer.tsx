@@ -15,6 +15,7 @@ import {
   Image,
   Text,
   Stack,
+  Divider,
 } from "@chakra-ui/react";
 import React from "react";
 import { CiMail } from "react-icons/ci";
@@ -28,20 +29,18 @@ import {
 import { IoMdMail } from "react-icons/io";
 import { IoHomeSharp } from "react-icons/io5";
 import { MdLocationPin } from "react-icons/md";
+import NavLinks from "@/constants/navlinks.json";
 
-interface Props {
-  children: any;
-  btn: any;
-}
+interface Props {}
 
-const MyDrawer: React.FC<Props> = ({ children, btn }) => {
+const MyDrawer: React.FC<Props> = ({}) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef: any = React.useRef();
 
   return (
     <>
       <Button ref={btnRef} bgColor={"transparent"} p={0} onClick={onOpen}>
-        {btn}
+        <Image alt="img" src="/images/menu.png" w={8} cursor={"pointer"} />
       </Button>
       <Drawer
         isOpen={isOpen}
@@ -55,11 +54,17 @@ const MyDrawer: React.FC<Props> = ({ children, btn }) => {
           bgImage={"linear-gradient(90deg,#e2e9f7 0%,#ffffff 100%)"}
         >
           <DrawerCloseButton />
+
           <DrawerHeader mt={10} ml={5}>
-            <Image src="/images/logo_dark.png" w={"200px"} />
+            <Image
+              alt="img"
+              src="/images/logo_dark.png"
+              w={"200px"}
+              className="lg"
+            />
           </DrawerHeader>
 
-          <DrawerBody px={10}>
+          <DrawerBody px={10} className="lg">
             <Text mt={5}>
               Sedut perspiciatis unde omnis iste natus error sitlutem acc
               usantium doloremque laudantium totam remaperiaeaque ipsa quae ab
@@ -146,12 +151,20 @@ const MyDrawer: React.FC<Props> = ({ children, btn }) => {
             </Flex>
           </DrawerBody>
 
-          {/* <DrawerFooter>
-            <Button variant="outline" mr={3} onClick={onClose}>
-              Cancel
-            </Button>
-            <Button colorScheme="blue">Save</Button>
-          </DrawerFooter> */}
+          <DrawerBody className="sm">
+            <Stack>
+              {NavLinks.map((link: any, key: any) => {
+                return (
+                  <>
+                    <Link href={link.href} key={key}>
+                      <Text>{link.title}</Text>
+                    </Link>
+                    <Divider />
+                  </>
+                );
+              })}
+            </Stack>
+          </DrawerBody>
         </DrawerContent>
       </Drawer>
     </>

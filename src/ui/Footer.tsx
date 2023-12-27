@@ -41,19 +41,19 @@ const Footer: React.FC<Props> = ({}) => {
         align={"center"}
       >
         <Box flex={1}>
-          <Image src="/images/partner-1-1.png" />
+          <Image alt="img" src="/images/partner-1-1.png" />
         </Box>
         <Box flex={1}>
-          <Image src="/images/partner-2-1.png" />
+          <Image alt="img" src="/images/partner-2-1.png" />
         </Box>
         <Box flex={1}>
-          <Image src="/images/partner-3-1.png" />
+          <Image alt="img" src="/images/partner-3-1.png" />
         </Box>
         <Box flex={1}>
-          <Image src="/images/logo_4-1.png" />
+          <Image alt="img" src="/images/logo_4-1.png" />
         </Box>
         <Box flex={1}>
-          <Image src="/images/logo_5-1.png" />
+          <Image alt="img" src="/images/logo_5-1.png" />
         </Box>
       </Flex>
       <Grid
@@ -63,7 +63,7 @@ const Footer: React.FC<Props> = ({}) => {
         p={20}
       >
         <GridItem px={5}>
-          <Image src="/images/logo_dark.png" w={"200px"} />
+          <Image alt="img" src="/images/logo_dark.png" w={"200px"} />
           <Text mt={5}>
             We are a team of creative thinkers who are the expert of their
             industry. The growth of customers is our prime motto. We are

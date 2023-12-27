@@ -46,23 +46,20 @@ const Navbar: React.FC<Props> = ({}) => {
       boxShadow={scrollY > 500 ? "0 0 15px #cbcbcb" : ""}
     >
       <HStack justify={"space-between"}>
-        <Image src={"/images/logo_dark.png"} alt={"log"} w={200} />
+        <Image src={"/images/logo_dark.png"} alt={"logo"} w={200} />
         <HStack gap={10}>
           {Navlinks.map((link: any, key: any) => {
             return (
-              <Link href={link.href} key={key}>
+              <Link href={link.href} key={key} className="lg">
                 <Text>{link.title}</Text>
               </Link>
             );
           })}
-          <Box>
+          <Box className="lg">
             <IoIosSearch style={{ fontSize: "24px" }} />
           </Box>
           <Box>
-            <MyDrawer
-              children={<>hello</>}
-              btn={<Image src="/images/menu.png" w={8} cursor={"pointer"} />}
-            />
+            <MyDrawer />
           </Box>
         </HStack>
       </HStack>

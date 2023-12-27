@@ -17,7 +17,7 @@ const Blog: React.FC<Props> = ({}) => {
           Latest Tips & Tricks
         </Text>
         <Text color={"gray"}>
-          We've been building creative tools together for over a decade and have
+          We&apos;ve been building creative tools together for over a decade and have
           a deep appreciation for software applications
         </Text>
       </Box>

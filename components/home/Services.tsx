@@ -42,7 +42,7 @@ const Services: React.FC<Props> = ({}) => {
               gap={5}
               borderRadius={10}
             >
-              <Image src={service.icon} width={"60px"} />
+              <Image alt="img" src={service.icon} width={"60px"} />
               <Text fontSize={"2xl"} fontWeight={700}>
                 {service.title}
               </Text>

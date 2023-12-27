@@ -47,7 +47,7 @@ const Solutions: React.FC<Props> = ({}) => {
             justify={"center"}
             align={"center"}
           >
-            <Image src={data.image} w={20} />
+            <Image alt="img" src={data.image} w={20} />
             <Text as={"b"}>{data.title}</Text>
           </Stack>
         ))}

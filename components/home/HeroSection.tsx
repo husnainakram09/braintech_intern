@@ -55,7 +55,7 @@ const Home: React.FC<Props> = ({}) => {
               <HStack mt={5}>
                 {[1, 2, 3, 4].map((value: any, key: any) => {
                   return (
-                    <Image
+                    <Image alt="img"
                       src={`/images/partner-${value}.png`}
                       key={key}
                       w={"120px"}
@@ -66,7 +66,7 @@ const Home: React.FC<Props> = ({}) => {
             </Box>
           </Box>
           <Box w={"100%"}>
-            <Image src="/images/hero_bg.png" objectFit={"contain"} />
+            <Image alt="img" src="/images/hero_bg.png" objectFit={"contain"} />
           </Box>
         </Grid>
       </Box>

@@ -74,7 +74,7 @@ const About: React.FC<Props> = ({}) => {
             </Box>
           </GridItem>
           <GridItem w={"100%"}>
-            <Image src="/images/about.png" objectFit={"contain"} mt={10}/>
+            <Image alt="img" src="/images/about.png" objectFit={"contain"} mt={10}/>
           </GridItem>
         </Grid>
       </Box>
