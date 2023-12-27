@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Business Intelligence",
+    "description": "We denounce with righteous indignation and dislike men who are so beguiled and demo ralized your data.",
+    "icon": "/images/creativity.png",
+    "image": "/images/bg-box.png",
+    "bgColor": "linear-gradient(90deg, #7218F9 0%, #7218F9 58%)"
+  },
+  {
+    "title": "UI/UX",
+    "description": "We denounce with righteous indignation and dislike men who are so beguiled and demo ralized your data.",
+    "icon": "/images/graphic-tool.png",
+    "image": "/images/bg-box-2.png",
+    "bgColor": "linear-gradient(90deg, #FC821B 0%, #FC821B 58%)"
+  },
+  {
+    "title": "Data Analysis",
+    "description": "We denounce with righteous indignation and dislike men who are so beguiled and demo ralized your data.",
+    "icon": "/images/idea-2.png",
+    "image": "/images/bg-box-3.png",
+    "bgColor": "linear-gradient(290deg, #0E3CB7 0%, #4D7AF2 58%)"
+  }
+]

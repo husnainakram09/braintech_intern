@@ -1,0 +1,30 @@
+[
+  {
+    "href": "#home",
+    "title": "Home"
+  },
+  {
+    "href": "#about",
+    "title": "About"
+  },
+  {
+    "href": "#services",
+    "title": "Services"
+  },
+  {
+    "href": "#portfolios",
+    "title": "Portfolios"
+  },
+  {
+    "href": "#team",
+    "title": "Team"
+  },
+  {
+    "href": "#blog",
+    "title": "Blog"
+  },
+  {
+    "href": "#contact",
+    "title": "Contact"
+  }
+]
