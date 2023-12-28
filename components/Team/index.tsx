@@ -31,14 +31,31 @@ const responsive: ResponsiveType = {
   },
 };
 const Team: React.FC<Props> = ({}) => {
+  const teamData = [
+    {
+      name: "Pull Maradona",
+      role: "President & CEO",
+      img: "/images/team_5.jpg",
+    },
+    {
+      name: "Rohit Pande",
+      role: "President & CEO",
+      img: "/images/team_9.jpg",
+    },
+    {
+      name: "Makhaia Antitni",
+      role: "President & CEO",
+      img: "/images/team_6.jpg",
+    },
+  ];
   return (
     <Box id="team" px={10} py={100} bgColor={"#F6F7F9"} textAlign={"center"}>
       <Text color={"blue"}>Team</Text>
       <Text fontSize={"4xl"} fontWeight={700} mt={5}>
         Expert IT Consultants
       </Text>
-      <Carousel ssr arrows={false} showDots responsive={responsive}>
-        {Array.from({ length: 8 }).map((_, key) => (
+      <Carousel ssr arrows={false} showDots infinite responsive={responsive}>
+        {teamData.map((member, key) => (
           <Box
             w={["100%", "max-content", "max-content"]}
             py={20}
@@ -53,12 +70,12 @@ const Team: React.FC<Props> = ({}) => {
               bgRepeat={"no-repeat"}
               p={7}
             >
-              <Image alt="img" src="/images/team_5.jpg" borderRadius={"100%"} />
+              <Image alt="img" src={member.img} borderRadius={"100%"} />
             </Box>
             <Text fontSize={"2xl"} fontWeight={700} mt={2}>
-              Pull Maradona
+              {member.name}{" "}
             </Text>
-            <Text mt={2}>President & CEO</Text>
+            <Text mt={2}>{member.role}</Text>
             <Flex justify={"center"} columnGap={5} mt={5}>
               <Link href={"#"}>
                 <FaFacebookF />
