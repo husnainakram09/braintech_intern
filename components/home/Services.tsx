@@ -14,7 +14,7 @@ interface Props {}
 const Services: React.FC<Props> = ({}) => {
   return (
     <Box p={20}>
-      <Box maxW={"500px"} m={"auto"}>
+      <Box maxW={"500px"} m={"auto"} textAlign={"center"}>
         <Text color={"#F27C1E"} as={"b"}>
           WE ARE BEST
         </Text>
